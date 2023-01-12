@@ -9,18 +9,19 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
+import "./style.scss";
 
 const ContactUs = () => {
   return (
     <div className="bg-light py-5 mt-5">
-      <Container>
-        <Row xs="1" md="2" className="g-4">
+      <Container className="my-5">
+        <Row xs="1" md="2" className="g-5">
           <Col>
-            <h3 className="mb-3">
+            <h3 className="mb-4">
               Dump your tech needs here! We'll get back to you, faster than
               flash!
             </h3>
-            <p className="text-muted">
+            <p className="text-muted mb-5">
               <small>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -67,10 +68,9 @@ const ContactUs = () => {
                     title="Country"
                     id="phone"
                   >
-                    <Dropdown.Item href="#">Action</Dropdown.Item>
-                    <Dropdown.Item href="#">Another action</Dropdown.Item>
-                    <Dropdown.Item href="#">Something else here</Dropdown.Item>
-                    <Dropdown.Item href="#">Separated link</Dropdown.Item>
+                    <Dropdown.Item href="#">India</Dropdown.Item>
+                    <Dropdown.Item href="#">UK</Dropdown.Item>
+                    <Dropdown.Item href="#">USA</Dropdown.Item>
                   </DropdownButton>
                   <Form.Control aria-label="Text input with dropdown button" />
                 </InputGroup>
@@ -93,8 +93,8 @@ const ContactUs = () => {
                   label="You agree to our friendly privacy policy"
                 />
               </Form.Group>
-              <Button className="w-100 mt-3" variant="primary">
-                Primary
+              <Button className="w-100 mt-3" size="lg" variant="primary">
+                Send Message
               </Button>
             </Form>
           </Col>
@@ -103,8 +103,7 @@ const ContactUs = () => {
               src="https://s40424.pcdn.co/in/wp-content/uploads/2022/03/What-is-the-Difference-Between-Sales-and-Marekting-1.jpg"
               alt="sales"
               fluid
-              rounded
-              className="h-100"
+              className="h-100 contact-image"
             />
           </Col>
         </Row>

@@ -11,10 +11,11 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { BsTwitter } from "react-icons/bs";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import "./style.scss";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer-wrap text-light">
       <Container className="py-5">
         <Row xs="1" md="2" lg="4" className="g-4">
           <Col>

@@ -11,28 +11,33 @@ import {
   BsFillChatLeftTextFill,
 } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
+import "./style.scss";
 
 const Services = () => {
   return (
-    <div className="pb-5">
+    <div className="py-5 mt-5">
       <Container>
         <Row xs="1" md="2" lg="3" className="g-4">
-          {[...Array(8).keys()].map((item) => (
+          {[...Array(8).keys()].map((item, i) => (
             <Col>
-              <Card>
+              <Card
+                className={`${
+                  i === 0 ? "first-service-card text-light" : "bg-light"
+                } border-0 service-card`}
+              >
                 <Card.Body>
                   <Image
                     src="https://s40424.pcdn.co/in/wp-content/uploads/2022/03/What-is-the-Difference-Between-Sales-and-Marekting-1.jpg"
                     alt="sales"
                     rounded
-                    style={{ width: "60px", height: "60px" }}
+                    style={{ width: "70px", height: "70px" }}
                   />
-                  <Card.Title className="mt-4 mb-3">MVP Development</Card.Title>
+                  <Card.Title className="mt-5 mb-3">MVP Development</Card.Title>
                   <Card.Text className="small">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center mt-5">
                     <p className="mb-0 me-3">Learn more</p>
                     <BsArrowRight />
                   </div>

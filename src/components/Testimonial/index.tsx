@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { RiDoubleQuotesR } from "react-icons/ri";
+import "./style.scss";
 
 const Testimonial = () => {
   return (
@@ -18,19 +19,22 @@ const Testimonial = () => {
         <Row xs="1" md="2" lg="3" className="g-4">
           {[...Array(3).keys()].map((item) => (
             <Col>
-              <Card>
+              <Card className="testimonial-card border-0">
                 <Card.Body>
                   <div>⭐ ⭐ ⭐ ⭐ ⭐ </div>
-                  <Card.Text className="small mt-2">
+                  <Card.Text className="mt-2 text-muted">
                     Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    up the bulk of the card's content. Some quick example text
+                    to build on the card title and make up the bulk of the
+                    card's content. Some quick example text to build on the card
+                    title and make up the bulk of the card's content.
                   </Card.Text>
                   <div className="d-flex justify-content-between mt-5">
                     <div className="d-flex">
                       <Image
                         src="https://s40424.pcdn.co/in/wp-content/uploads/2022/03/What-is-the-Difference-Between-Sales-and-Marekting-1.jpg"
                         alt="sales"
-                        rounded
+                        className="testimonial-img"
                         style={{ width: "60px", height: "60px" }}
                       />
                       <div className="ms-3">
@@ -40,7 +44,7 @@ const Testimonial = () => {
                         </p>
                       </div>
                     </div>
-                    <RiDoubleQuotesR size={"4rem"} />
+                    <RiDoubleQuotesR className="text-muted" size={"4rem"} />
                   </div>
                 </Card.Body>
               </Card>
